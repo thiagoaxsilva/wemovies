@@ -8,7 +8,11 @@ import { MovieCard } from "../components/MovieCard";
 import { useProducts } from "../hooks/useProducts";
 
 // Styles
-import { HomeContainer } from "../styles/pages/home";
+import {
+  HomeContainer,
+  LoadingContainer,
+  ProductsContainer,
+} from "../styles/pages/home";
 
 // Assets
 import Loader from "../assets/loader.gif";
@@ -19,11 +23,15 @@ export default function Home() {
   return (
     <HomeContainer>
       {loading ? (
-        <Image width={83} height={83} src={Loader} alt="loader" />
+        <LoadingContainer>
+          <Image width={83} height={83} src={Loader} alt="loader" />
+        </LoadingContainer>
       ) : (
-        products.map((product) => (
-          <MovieCard key={product.id} product={product} />
-        ))
+        <ProductsContainer>
+          {products.map((product) => (
+            <MovieCard key={product.id} product={product} />
+          ))}
+        </ProductsContainer>
       )}
     </HomeContainer>
   );
