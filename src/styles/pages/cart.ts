@@ -58,11 +58,18 @@ export const CartProductsContainer = styled("div", {
   borderRadius: 4,
   padding: "1rem",
   marginBottom: "1rem",
+  width: "100%",
+  maxWidth: "950px",
 
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
   flex: 1,
+
+  "@bp2": {
+    flex: 0,
+    padding: "1.5rem",
+  },
 });
 
 export const Footer = styled("footer", {
