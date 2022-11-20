@@ -4,6 +4,7 @@ export const Movie = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  maxWidth: "309.33px",
 
   backgroundColor: "$secondary",
   width: "100%",
@@ -16,7 +17,7 @@ export const Movie = styled("div", {
   img: { marginBottom: 7 },
 
   p: {
-    fontSize: 12,
+    fontSize: "0.75rem",
     color: "$gray900",
     marginBottom: 2,
   },
@@ -56,7 +57,7 @@ export const PuchBtn = styled("div", {
   },
 
   p: {
-    fontSize: 12,
+    fontSize: "0.75rem",
     color: "$secondary",
     textTransform: "uppercase",
 

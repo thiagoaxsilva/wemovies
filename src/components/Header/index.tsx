@@ -10,7 +10,9 @@ export function Header() {
   const { quantity } = useCart();
   return (
     <HeaderContainer>
-      <LogoText>WeMovies</LogoText>
+      <Link href="/">
+        <LogoText>WeMovies</LogoText>
+      </Link>
       <Link href="/cart">
         <div>
           <CartItems>{quantity ? quantity : 0} itens</CartItems>

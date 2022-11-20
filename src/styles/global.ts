@@ -17,4 +17,13 @@ export const globalStyles = globalCss({
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 400,
   },
+
+  a: {
+    textDecoration: "none",
+    backgroundColor: "transparent",
+
+    "&:hover": {
+      textDecoration: "none",
+    },
+  },
 });

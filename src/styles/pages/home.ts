@@ -2,9 +2,8 @@ import { styled } from "..";
 
 export const HomeContainer = styled("main", {
   display: "flex",
-  flexDirection: "column",
-  flex: 1,
   flexWrap: "wrap",
+  flexGap: "1rem",
   gap: "1rem",
   alignItems: "center",
   justifyContent: "center",

@@ -3,7 +3,7 @@ import { styled } from "../../styles";
 export const HeaderContainer = styled("header", {
   padding: "21.5px 10px",
   width: "100%",
-  maxWidth: "1180",
+  maxWidth: "900px",
   margin: "0 auto",
   color: "$secondary",
 
@@ -25,10 +25,11 @@ export const HeaderContainer = styled("header", {
 export const LogoText = styled("p", {
   fontWeight: 700,
   fontSize: 20,
+  color: "$secondary",
 });
 
 export const CartItems = styled("p", {
   fontWeight: 600,
-  fontSize: 12,
+  fontSize: "0.75rem",
   color: "$gray100",
 });

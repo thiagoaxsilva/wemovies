@@ -9,6 +9,7 @@ export interface CartContextType {
   addProductToCart: (item: Product) => void;
   removeProductFromCart: (item: Product) => void;
   deleteProductFromCart: (item: Product) => void;
+  clearCart: () => void;
 }
 
 interface CartProviderProps {
@@ -51,6 +52,29 @@ export function CartProvider({ children }: CartProviderProps) {
     }
   }
 
+  function resetProductQuantity(product: Product) {
+    const newListOfProducts = products;
+
+    const productToUpdate = products.find(
+      (currentProduct) => currentProduct.id === product.id
+    );
+
+    if (productToUpdate) {
+      productToUpdate.quantity = 0;
+      newListOfProducts.splice(products.indexOf(productToUpdate), 1, product);
+      updateCurrentProducts(newListOfProducts);
+    }
+  }
+
+  function resetAllProductsQuantity(products: Product[]) {
+    products.forEach((product) => resetProductQuantity(product));
+  }
+
+  function clearCart() {
+    setProductsInCart([]);
+    resetAllProductsQuantity(products);
+  }
+
   function addProductToCart(item: Product) {
     const productExistOnCart = productsInCart.find(
       (cartProduct) => cartProduct.id === item.id
@@ -85,11 +109,12 @@ export function CartProvider({ children }: CartProviderProps) {
           ...productOnCart,
           quantity: productOnCart.quantity - 1,
         };
-
+        findProductAndUpdateQuantity(newProduct);
         const newCart = productsInCart;
         newCart.splice(productsInCart.indexOf(productOnCart), 1, newProduct);
         setProductsInCart([...newCart]);
       } else {
+        resetProductQuantity(item);
         const newCart = productsInCart;
         newCart.splice(productsInCart.indexOf(item), 1);
 
@@ -98,6 +123,7 @@ export function CartProvider({ children }: CartProviderProps) {
   }
 
   function deleteProductFromCart(item: Product) {
+    resetProductQuantity(item);
     const newCart = productsInCart;
     newCart.splice(productsInCart.indexOf(item), 1);
 
@@ -113,6 +139,7 @@ export function CartProvider({ children }: CartProviderProps) {
         addProductToCart,
         removeProductFromCart,
         deleteProductFromCart,
+        clearCart,
       }}
     >
       {children}

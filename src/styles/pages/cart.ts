@@ -3,7 +3,7 @@ import { styled } from "..";
 export const CartContainer = styled("main", {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
+  alignItems: "center",
   width: "100%",
   flex: 1,
   padding: "0 16px",
@@ -16,6 +16,10 @@ export const NoItemCard = styled("div", {
   alignItems: "center",
   justifyContent: "space-around",
   padding: 64,
+  borderRadius: 4,
+  width: "100%",
+  maxWidth: "960px",
+  overflow: "hidden",
 
   h1: {
     color: "$background",
@@ -57,96 +61,67 @@ export const CartProductsContainer = styled("div", {
 
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
   flex: 1,
 });
 
-export const ProductCard = styled("div", {
+export const Footer = styled("footer", {
   display: "flex",
-  gap: "1rem",
+  flexDirection: "column",
 
-  marginBottom: "1rem",
+  hr: {
+    margin: "21px 0",
+    backgroundColor: "$gray100",
+    height: 1,
+    border: 0,
+  },
 });
 
-export const ProductImageContainer = styled("div", {
+export const OrderActions = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-end",
+});
+
+export const TotalContainer = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  gap: 5,
+  fontWeight: 700,
+  textAlign: "center",
+  marginBottom: "1rem",
+
+  p: { fontSize: 14, color: "$gray100" },
+
+  strong: { fontSize: 24, color: "$background", width: 130 },
+});
+
+export const FinishOrderBtn = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
 
-  img: {
-    width: 64,
-    height: 82,
+  backgroundColor: "$primary",
+  width: "100%",
+  padding: "11px 0",
+  borderRadius: 4,
+
+  a: {
+    width: "100%",
+    height: "100%",
+
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
-});
-
-export const Info = styled("div", {
-  display: "flex",
-  flexWrap: "wrap",
-});
-
-export const ProductTopContainer = styled("div", {
-  display: "flex",
-  flex: 1,
-  justifyContent: "space-between",
 
   p: {
     fontWeight: 700,
     fontSize: 14,
-    color: "$background",
-    textAlign: "center",
-  },
-});
-
-export const HandleProduct = styled("div", {
-  display: "flex",
-  gap: "1rem",
-
-  p: {
-    fontWeight: 700,
-    color: "$background",
-  },
-  img: {
-    width: "1rem",
-    height: 18,
-    "&:hover": {
-      cursor: "pointer",
-    },
-  },
-});
-
-export const ProductBottomContainer = styled("div", {
-  display: "flex",
-  flex: 1,
-  justifyContent: "space-between",
-});
-
-export const ActionButtons = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  gap: 11,
-
-  img: {
-    "&:hover": {
-      cursor: "pointer",
-    },
+    color: "$secondary",
   },
 
-  div: {
-    borderRadius: 4,
-    border: "1px solid $gray50",
-    padding: "0 12px",
-
-    width: 59,
-    p: {
-      fontsize: 14,
-      color: "$background",
-    },
+  "&:hover": {
+    cursor: "pointer",
   },
-});
-
-export const SubtotalContainer = styled("div", {
-  textAlign: "left",
-  fontWeight: 700,
-
-  p: { fontSize: "0.75rem" },
-  strong: { color: "$background" },
 });

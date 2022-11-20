@@ -3,78 +3,56 @@ import Image from "next/image";
 import {
   CartContainer,
   CartProductsContainer,
-  HandleProduct,
-  Info,
+  FinishOrderBtn,
+  Footer,
   NoItemCard,
-  ProductBottomContainer,
-  ProductCard,
-  ProductTopContainer,
-  SubtotalContainer,
+  OrderActions,
+  TotalContainer,
 } from "../styles/pages/cart";
 
 import woman from "../assets/woman.png";
-import minus from "../assets/minus.svg";
-import plus from "../assets/plus.svg";
-import trash from "../assets/trash.svg";
-
-import filme1 from "../assets/filme2.png";
-
-import { ProductImageContainer, ActionButtons } from "../styles/pages/cart";
+import Link from "next/link";
+import { useCart } from "../hooks/useCart";
+import { ProductCard } from "../components/ProductCard";
+import { currencyFormat } from "../utils/formatter";
 
 export default function Cart() {
+  const { quantity, productsInCart, total, clearCart } = useCart();
   return (
     <CartContainer>
-      {/* <NoItemCard>
-        <h1>
-          Parece que não
-          <br /> há nada por aqui :(
-        </h1>
-        <Image src={woman} alt="Imagem silhueta de uma mulher" />
-        <div>
-          <p>Voltar</p>
-        </div>
-      </NoItemCard> */}
-      <CartProductsContainer>
-        <ProductCard>
-          <ProductImageContainer>
-            <Image src={filme1} alt="Filme" />
-          </ProductImageContainer>
-          <Info>
-            <ProductTopContainer>
-              <p>Homem Aranha</p>
-
-              <HandleProduct>
-                <p>R$ 29,99</p>
-                <Image src={trash} alt="Remover" />
-              </HandleProduct>
-            </ProductTopContainer>
-            <ProductBottomContainer>
-              <ActionButtons>
-                <Image src={minus} alt="Diminuir" />
-                <div>
-                  <p>1</p>
-                </div>
-                <Image src={plus} alt="Aumentar" />
-              </ActionButtons>
-
-              <SubtotalContainer>
-                <p>SUBTOTAL</p>
-                <strong>R$ 29,99</strong>
-              </SubtotalContainer>
-            </ProductBottomContainer>
-          </Info>
-        </ProductCard>
-        <hr />
-        <div>
+      {quantity < 1 ? (
+        <NoItemCard>
+          <h1>Parece que não há nada por aqui :(</h1>
+          <Image src={woman} alt="Imagem silhueta de uma mulher" />
+          <Link href="/">
+            <div>
+              <p>Voltar</p>
+            </div>
+          </Link>
+        </NoItemCard>
+      ) : (
+        <CartProductsContainer>
           <div>
-            <p>TOTAL</p>
-            <p>29,90</p>
+            {productsInCart.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
-          <div>
-            <p>FINALIZAR PEDIDO</p>
-          </div>
-        </div>
-      </CartProductsContainer>
+          <Footer>
+            <hr />
+            <OrderActions>
+              <TotalContainer>
+                <p>TOTAL</p>
+                <strong>{currencyFormat(total)}</strong>
+              </TotalContainer>
+              <FinishOrderBtn onClick={() => clearCart()}>
+                <Link href="/success">
+                  <p>FINALIZAR PEDIDO</p>
+                </Link>
+              </FinishOrderBtn>
+            </OrderActions>
+          </Footer>
+        </CartProductsContainer>
+      )}
     </CartContainer>
   );
 }
