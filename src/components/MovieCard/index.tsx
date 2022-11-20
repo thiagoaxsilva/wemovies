@@ -1,10 +1,20 @@
+//Libs
 import Image from "next/image";
+
+// Hooks
+import { useCart } from "../../hooks/useCart";
+
+// Types
 import { Product } from "../../types/product.types";
-import { currencyFormat } from "../../utils/formatter";
+
+// Styles
 import { Movie, PuchBtn } from "./styles";
 
+// Assets
 import cart from "../../assets/cart.svg";
-import { useCart } from "../../hooks/useCart";
+
+// Utils
+import { currencyFormat } from "../../utils/formatter";
 
 interface MovieCardProps {
   product: Product;

@@ -1,5 +1,14 @@
+//Libs
 import Image from "next/image";
+import Link from "next/link";
 
+//Components
+import { ProductCard } from "../components/ProductCard";
+
+// Hooks
+import { useCart } from "../hooks/useCart";
+
+//Styles
 import {
   CartContainer,
   CartProductsContainer,
@@ -10,10 +19,10 @@ import {
   TotalContainer,
 } from "../styles/pages/cart";
 
+//Assets
 import woman from "../assets/woman.png";
-import Link from "next/link";
-import { useCart } from "../hooks/useCart";
-import { ProductCard } from "../components/ProductCard";
+
+//Utils
 import { currencyFormat } from "../utils/formatter";
 
 export default function Cart() {

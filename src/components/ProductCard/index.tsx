@@ -1,11 +1,13 @@
+//Libs
 import Image from "next/image";
+
+// Hooks
+import { useCart } from "../../hooks/useCart";
+
+// Types
 import { Product } from "../../types/product.types";
 
-import minus from "../../assets/minus.svg";
-import plus from "../../assets/plus.svg";
-import trash from "../../assets/trash.svg";
-import { currencyFormat } from "../../utils/formatter";
-
+// Styles
 import {
   ProductImageContainer,
   Info,
@@ -17,7 +19,14 @@ import {
   Container,
   ActionsButtonsContainer,
 } from "./styles";
-import { useCart } from "../../hooks/useCart";
+
+// Assets
+import minus from "../../assets/minus.svg";
+import plus from "../../assets/plus.svg";
+import trash from "../../assets/trash.svg";
+
+// Utils
+import { currencyFormat } from "../../utils/formatter";
 
 interface ProductCardProps {
   product: Product;

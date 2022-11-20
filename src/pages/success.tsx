@@ -1,7 +1,11 @@
-import { SuccessBuy, SuccessContainer } from "../styles/pages/success";
+//Libs
 import Link from "next/link";
 import Image from "next/image";
 
+// Styles
+import { SuccessBuy, SuccessContainer } from "../styles/pages/success";
+
+// Assets
 import man from "../assets/man.png";
 
 export default function Success() {

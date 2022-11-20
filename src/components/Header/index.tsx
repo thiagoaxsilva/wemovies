@@ -1,7 +1,11 @@
+//Libs
 import Image from "next/image";
+import Link from "next/link";
 
-import basket from "../../assets/basket.svg";
+// Hooks
+import { useCart } from "../../hooks/useCart";
 
+// Styles
 import {
   CartItems,
   CartItemsContainer,
@@ -9,8 +13,9 @@ import {
   LogoText,
   MyCart,
 } from "./styles";
-import { useCart } from "../../hooks/useCart";
-import Link from "next/link";
+
+// Assets
+import basket from "../../assets/basket.svg";
 
 export function Header() {
   const { quantity } = useCart();

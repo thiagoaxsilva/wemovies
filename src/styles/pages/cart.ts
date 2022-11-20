@@ -88,6 +88,13 @@ export const OrderActions = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-end",
+
+  "@bp2": {
+    flexDirection: "row",
+
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
 });
 
 export const TotalContainer = styled("div", {
@@ -101,6 +108,10 @@ export const TotalContainer = styled("div", {
   p: { fontSize: 14, color: "$gray100" },
 
   strong: { fontSize: 24, color: "$background", width: 130 },
+
+  "@bp2": {
+    order: 2,
+  },
 });
 
 export const FinishOrderBtn = styled("div", {
@@ -130,5 +141,10 @@ export const FinishOrderBtn = styled("div", {
 
   "&:hover": {
     cursor: "pointer",
+  },
+
+  "@bp2": {
+    order: 1,
+    width: "235.42px",
   },
 });

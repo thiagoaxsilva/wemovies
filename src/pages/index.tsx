@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
-
-import { HomeContainer } from "../styles/pages/home";
-
-import { Product } from "../types/product.types";
-import api from "../services/api";
-import Loader from "../assets/loader.gif";
-
-import { MovieCard } from "../components/MovieCard";
+//Libs
 import Image from "next/image";
 
+// Components
+import { MovieCard } from "../components/MovieCard";
+
+// Hooks
 import { useProducts } from "../hooks/useProducts";
+
+// Styles
+import { HomeContainer } from "../styles/pages/home";
+
+// Assets
+import Loader from "../assets/loader.gif";
 
 export default function Home() {
   const { products, loading } = useProducts();
