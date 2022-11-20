@@ -8,7 +8,12 @@ export const Container = styled("div", {
 
   "@bp2": {
     position: "relative",
-    marginBottom: 0,
+    marginBottom: 21,
+    h6: {
+      fontWeight: 700,
+      fontSize: 14,
+      color: "$gray100",
+    },
   },
 });
 
@@ -25,7 +30,10 @@ export const ProductImageContainer = styled("div", {
   h6: { display: "none" },
   "@bp2": {
     flexDirection: "column",
+    alignItems: "flex-start",
+
     h6: { display: "inline-block", marginBottom: 21 },
+
     img: {
       width: 89,
       height: 114,

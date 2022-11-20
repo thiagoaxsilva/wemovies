@@ -82,6 +82,12 @@ export const Footer = styled("footer", {
     height: 1,
     border: 0,
   },
+
+  "@bp2": {
+    hr: {
+      marginTop: 0,
+    },
+  },
 });
 
 export const OrderActions = styled("div", {
