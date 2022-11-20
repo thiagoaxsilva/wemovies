@@ -5,6 +5,11 @@ export const Container = styled("div", {
   gap: "1rem",
 
   marginBottom: "1rem",
+
+  "@bp2": {
+    position: "relative",
+    marginBottom: 0,
+  },
 });
 
 export const ProductImageContainer = styled("div", {
@@ -16,11 +21,28 @@ export const ProductImageContainer = styled("div", {
     width: 64,
     height: 82,
   },
+
+  h6: { display: "none" },
+  "@bp2": {
+    flexDirection: "column",
+    h6: { display: "inline-block", marginBottom: 21 },
+    img: {
+      width: 89,
+      height: 114,
+    },
+    marginRight: 52,
+  },
 });
 
 export const Info = styled("div", {
   display: "flex",
   flexWrap: "wrap",
+  width: "100%",
+
+  "@bp2": {
+    justifyContent: "space-between",
+    width: "60%",
+  },
 });
 
 export const ProductTopContainer = styled("div", {
@@ -33,6 +55,15 @@ export const ProductTopContainer = styled("div", {
     fontSize: 14,
     color: "$background",
     textAlign: "center",
+  },
+
+  "@bp2": {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+
+    gap: 8,
+    marginTop: 54,
   },
 });
 
@@ -50,6 +81,11 @@ export const HandleProduct = styled("div", {
     "&:hover": {
       cursor: "pointer",
     },
+    "@bp2": {
+      position: "absolute",
+      right: 0,
+      top: "56%",
+    },
   },
 });
 
@@ -57,6 +93,18 @@ export const ProductBottomContainer = styled("div", {
   display: "flex",
   flex: 1,
   justifyContent: "space-between",
+});
+
+export const ActionsButtonsContainer = styled("div", {
+  h6: {
+    display: "none",
+  },
+  "@bp2": {
+    display: "flex",
+    flexDirection: "column",
+
+    h6: { display: "inline-block", marginBottom: 65 },
+  },
 });
 
 export const ActionButtons = styled("div", {
@@ -89,4 +137,10 @@ export const SubtotalContainer = styled("div", {
 
   p: { fontSize: "0.75rem" },
   strong: { color: "$background" },
+
+  "@bp2": {
+    display: "flex",
+    flexDirection: "column",
+    h6: { display: "inline-block", marginBottom: 68 },
+  },
 });

@@ -15,6 +15,7 @@ import {
   ActionButtons,
   SubtotalContainer,
   Container,
+  ActionsButtonsContainer,
 } from "./styles";
 import { useCart } from "../../hooks/useCart";
 
@@ -29,8 +30,10 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Container>
       <ProductImageContainer>
+        <h6>PRODUTO</h6>
         <Image width={89} height={114} src={product.image} alt="Filme" />
       </ProductImageContainer>
+
       <Info>
         <ProductTopContainer>
           <p>{product.title}</p>
@@ -45,24 +48,27 @@ export function ProductCard({ product }: ProductCardProps) {
           </HandleProduct>
         </ProductTopContainer>
         <ProductBottomContainer>
-          <ActionButtons>
-            <Image
-              onClick={() => removeProductFromCart(product)}
-              src={minus}
-              alt="Diminuir"
-            />
-            <div>
-              <p>{product.quantity}</p>
-            </div>
-            <Image
-              onClick={() => addProductToCart(product)}
-              src={plus}
-              alt="Aumentar"
-            />
-          </ActionButtons>
+          <ActionsButtonsContainer>
+            <h6>QTD</h6>
+            <ActionButtons>
+              <Image
+                onClick={() => removeProductFromCart(product)}
+                src={minus}
+                alt="Diminuir"
+              />
+              <div>
+                <p>{product.quantity}</p>
+              </div>
+              <Image
+                onClick={() => addProductToCart(product)}
+                src={plus}
+                alt="Aumentar"
+              />
+            </ActionButtons>
+          </ActionsButtonsContainer>
 
           <SubtotalContainer>
-            <p>SUBTOTAL</p>
+            <h6>SUBTOTAL</h6>
             <strong>{currencyFormat(product.price * product.quantity)}</strong>
           </SubtotalContainer>
         </ProductBottomContainer>
