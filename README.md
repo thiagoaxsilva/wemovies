@@ -25,9 +25,9 @@ npm run dev
 ![Screenshot 2022-11-20 at 16-15-45 Screenshot](https://user-images.githubusercontent.com/11490591/202921434-8be511e2-bf51-46fd-9300-35621cf7d7d1.png)
 
 ### Mobile - 375x800
-![Screenshot 2022-11-20 at 15-20-38 Screenshot](https://user-images.githubusercontent.com/11490591/202919565-c7b17872-96bc-48e9-b99f-9cdbdc203317.png)
-![Screenshot 2022-11-20 at 15-21-12 Screenshot](https://user-images.githubusercontent.com/11490591/202919567-4cb22928-97d2-4928-9463-6889dc49876b.png)
-![Screenshot 2022-11-20 at 15-22-32 Screenshot](https://user-images.githubusercontent.com/11490591/202919625-ea8db7b1-e376-4c78-aab7-f783cc9d7c2f.png)
-![Screenshot 2022-11-20 at 15-21-38 Screenshot](https://user-images.githubusercontent.com/11490591/202919636-d80f45e3-51ce-4214-83ae-1c4a00773d0d.png)
-![Screenshot 2022-11-20 at 15-22-22 Screenshot](https://user-images.githubusercontent.com/11490591/202919644-0b7b0273-2d84-4bc0-b420-9f74f87dcfaa.png)
+![Screenshot 2022-11-20 at 16-17-51 Screenshot](https://user-images.githubusercontent.com/11490591/202921518-d7bfa2a3-feca-48bb-8925-2923482ac65f.png)
+![Screenshot 2022-11-20 at 16-17-59 Screenshot](https://user-images.githubusercontent.com/11490591/202921528-2d02984b-43ff-4395-b04e-bf6dfa156151.png)
+![Screenshot 2022-11-20 at 16-18-20 Screenshot](https://user-images.githubusercontent.com/11490591/202921534-41d84480-d816-493f-931a-77e6ed41dcab.png)
+![Screenshot 2022-11-20 at 16-18-07 Screenshot](https://user-images.githubusercontent.com/11490591/202921538-77c3dfb7-9a5e-4df7-9536-9db03d1ecfca.png)
+![Screenshot 2022-11-20 at 16-18-15 Screenshot](https://user-images.githubusercontent.com/11490591/202921551-e516f02c-6f0b-4683-ad4a-7d876942c58a.png)
 
