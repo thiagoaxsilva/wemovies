@@ -24,7 +24,7 @@ npm run dev
 
 ![Screenshot 2022-11-20 at 15-22-44 Screenshot](https://user-images.githubusercontent.com/11490591/202919424-90c8b808-4a9d-4862-adc2-0fc129d35115.png)
 
-![Screenshot 2022-11-20 at 15-23-04 Screenshot](https://user-images.githubusercontent.com/11490591/202919412-6cde54d3-581e-4268-87b0-d6ca5839ca36.png)
+![Screenshot 2022-11-20 at 16-12-28 Screenshot](https://user-images.githubusercontent.com/11490591/202921255-4cd270a5-9a96-4182-bff7-fe9d8499cfef.png)
 
 ![Screenshot 2022-11-20 at 15-23-11 Screenshot](https://user-images.githubusercontent.com/11490591/202919407-0e740a4d-af5e-41db-97be-6742223007f4.png)
 
