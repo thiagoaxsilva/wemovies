@@ -27,6 +27,7 @@ npm run dev
 
 ### Mobile - 375x800
 ![Screenshot 2022-11-21 at 11-47-09 Screenshot](https://user-images.githubusercontent.com/11490591/203084648-9d128524-f440-485d-a9bf-f66240893b57.png)
+
 ![Screenshot 2022-11-20 at 16-20-41 Screenshot](https://user-images.githubusercontent.com/11490591/202921628-4f00ac68-e82b-4f20-8811-ce46a015703e.png)
 ![Screenshot 2022-11-20 at 16-20-27 Screenshot](https://user-images.githubusercontent.com/11490591/202921637-44eab210-9426-4d3f-88fd-26e64af02e3b.png)
 ![Screenshot 2022-11-20 at 16-18-20 Screenshot](https://user-images.githubusercontent.com/11490591/202921534-41d84480-d816-493f-931a-77e6ed41dcab.png)
