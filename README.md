@@ -18,6 +18,7 @@ npm run dev
 ## Imagens das telas
 
 ### Desktop - 1140x800
+![Screenshot 2022-11-21 at 11-47-20 Screenshot](https://user-images.githubusercontent.com/11490591/203084697-883c0bc4-961a-4573-b21a-58426a87973d.png)
 ![Screenshot 2022-11-20 at 16-15-53 Screenshot](https://user-images.githubusercontent.com/11490591/202921406-b66c14a4-28df-45ce-8f2c-ea06366f9259.png)
 ![Screenshot 2022-11-20 at 16-15-32 Screenshot](https://user-images.githubusercontent.com/11490591/202921411-3a14f2fb-5028-46f3-89fb-08b3a7dc8ed9.png)
 ![Screenshot 2022-11-20 at 16-15-58 Screenshot](https://user-images.githubusercontent.com/11490591/202921424-c3d95545-570b-4fb3-a05d-5115cd51f000.png)
@@ -25,6 +26,7 @@ npm run dev
 ![Screenshot 2022-11-20 at 16-15-45 Screenshot](https://user-images.githubusercontent.com/11490591/202921434-8be511e2-bf51-46fd-9300-35621cf7d7d1.png)
 
 ### Mobile - 375x800
+![Screenshot 2022-11-21 at 11-47-09 Screenshot](https://user-images.githubusercontent.com/11490591/203084648-9d128524-f440-485d-a9bf-f66240893b57.png)
 ![Screenshot 2022-11-20 at 16-20-41 Screenshot](https://user-images.githubusercontent.com/11490591/202921628-4f00ac68-e82b-4f20-8811-ce46a015703e.png)
 ![Screenshot 2022-11-20 at 16-20-27 Screenshot](https://user-images.githubusercontent.com/11490591/202921637-44eab210-9426-4d3f-88fd-26e64af02e3b.png)
 ![Screenshot 2022-11-20 at 16-18-20 Screenshot](https://user-images.githubusercontent.com/11490591/202921534-41d84480-d816-493f-931a-77e6ed41dcab.png)
