@@ -15,7 +15,9 @@ export const LoadingContainer = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   flex: 1,
-  backgroundColor: "!secondary",
+  height: 83,
+  width: 83,
+  position: "absolute",
 });
 
 export const ProductsContainer = styled("div", {

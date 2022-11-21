@@ -24,7 +24,7 @@ export default function Home() {
     <HomeContainer>
       {loading ? (
         <LoadingContainer>
-          <Image width={83} height={83} src={Loader} alt="loader" />
+          <Image fill src={Loader} alt="loader" />
         </LoadingContainer>
       ) : (
         <ProductsContainer>
