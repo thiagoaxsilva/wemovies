@@ -15,7 +15,7 @@ import {
 } from "../styles/pages/home";
 
 // Assets
-import Loader from "../assets/loader.gif";
+import loader from "../assets/loader.svg";
 
 export default function Home() {
   const { products, loading } = useProducts();
@@ -24,7 +24,7 @@ export default function Home() {
     <HomeContainer>
       {loading ? (
         <LoadingContainer>
-          <Image fill src={Loader} alt="loader" />
+          <Image fill src={loader} alt="Loader" />
         </LoadingContainer>
       ) : (
         <ProductsContainer>
